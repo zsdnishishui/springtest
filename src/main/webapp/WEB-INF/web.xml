@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         id="WebApp_ID" metadata-complete="false" version="4.0">
+  <!-- metadata-complete取值为true，表示关闭注解支持 -->
+  <!-- metadata-complete取值为false，表示启用注解支持 -->
+<!--  <servlet>-->
+<!--    <servlet-name>MyServlet</servlet-name>-->
+<!--    <servlet-class>servlet.MyServlet</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>MyServlet</servlet-name>-->
+<!--    <url-pattern>/MyServlet</url-pattern>-->
+<!--  </servlet-mapping>-->
+  <!-- 配置 SpringMVC 的前端控制器，对浏览器发送的请求统一进行处理 -->
+<!--  <servlet>-->
+<!--    <servlet-name>dispatcherServlet</servlet-name>-->
+<!--    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>-->
+<!--    &lt;!&ndash;配置 DispatcherServlet 的一个初始化参数：spring mvc 配置文件按的位置和名称&ndash;&gt;-->
+<!--    <init-param>-->
+<!--      <param-name>contextConfigLocation</param-name>-->
+<!--      <param-value>classpath:Beans.xml</param-value>-->
+<!--    </init-param>-->
+
+<!--    &lt;!&ndash;作为框架的核心组件，在启动过程中有大量的初始化操作要做-->
+<!--        而这些操作放在第一次请求时才执行会严重影响访问速度-->
+<!--        因此需要通过此标签将启动控制DispatcherServlet的初始化时间提前到服务器启动时&ndash;&gt;-->
+<!--    <load-on-startup>1</load-on-startup>-->
+<!--  </servlet>-->
+
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>dispatcherServlet</servlet-name>-->
+<!--    &lt;!&ndash;设置springMVC的核心控制器所能处理的请求的请求路径-->
+<!--    /所匹配的请求可以是/login或.html或.js或.css方式的请求路径-->
+<!--    但是/不能匹配.jsp请求路径的请求&ndash;&gt;-->
+<!--    <url-pattern>/</url-pattern>-->
+<!--  </servlet-mapping>-->
+</web-app>
