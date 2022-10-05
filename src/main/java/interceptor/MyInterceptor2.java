@@ -11,9 +11,11 @@ public class MyInterceptor2 implements HandlerInterceptor {
         System.out.println("preHandle2 执行");
         return true;
     }
+
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
         System.out.println("postHandle2 执行");
     }
+
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
         System.out.println("afterCompletion2 执行");
     }

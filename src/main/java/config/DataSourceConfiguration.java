@@ -1,4 +1,5 @@
 package config;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -7,6 +8,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
+
 @PropertySource("classpath:jdbc.properties")
 @Configuration
 public class DataSourceConfiguration {
@@ -20,7 +22,7 @@ public class DataSourceConfiguration {
     private String password;
 
     @Bean
-    public DataSource dataSource(){
+    public DataSource dataSource() {
         DriverManagerDataSource druidDataSource = new DriverManagerDataSource();
         druidDataSource.setDriverClassName(driver);
         druidDataSource.setUrl(url);
@@ -28,8 +30,9 @@ public class DataSourceConfiguration {
         druidDataSource.setPassword(password);
         return druidDataSource;
     }
+
     @Bean
-    public JdbcTemplate JdbcTemplate(DataSource dataSource){
+    public JdbcTemplate JdbcTemplate(DataSource dataSource) {
         return new JdbcTemplate(dataSource);
     }
 }

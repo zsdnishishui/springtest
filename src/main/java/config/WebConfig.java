@@ -38,10 +38,11 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         MyInterceptor myInterceptor = new MyInterceptor();
-        registry.addInterceptor(myInterceptor).addPathPatterns("/**").excludePathPatterns("/","/user/login");
+        registry.addInterceptor(myInterceptor).addPathPatterns("/**").excludePathPatterns("/", "/user/login");
         MyInterceptor2 myInterceptor2 = new MyInterceptor2();
-        registry.addInterceptor(myInterceptor2).addPathPatterns("/**").excludePathPatterns("/","/user/register");
+        registry.addInterceptor(myInterceptor2).addPathPatterns("/**").excludePathPatterns("/", "/user/register");
     }
+
     //配置视图控制
 //    @Override
 //    public void addViewControllers(ViewControllerRegistry registry) {

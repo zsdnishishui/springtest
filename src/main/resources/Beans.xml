@@ -15,9 +15,9 @@
 
 
     <!--开启组件扫描功能-->
-<!--    <context:component-scan base-package="\"/>-->
+    <!--    <context:component-scan base-package="\"/>-->
     <!--开启@Aspectj   -->
-<!--    <aop:aspectj-autoproxy/>-->
+    <!--    <aop:aspectj-autoproxy/>-->
     <!--开启注解事务-->
-<!--    <tx:annotation-driven/>-->
+    <!--    <tx:annotation-driven/>-->
 </beans>

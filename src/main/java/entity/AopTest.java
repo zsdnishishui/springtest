@@ -1,10 +1,12 @@
-package enity;
+package entity;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class HelloWorld {
+public class AopTest {
 
+    @Value("550")
     private String message;
 
     public void setMessage(String message) {

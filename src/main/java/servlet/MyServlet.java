@@ -19,6 +19,7 @@ public class MyServlet extends HttpServlet {
         writer.write("编程帮欢迎您的到来，网址: www.biancheng.net");
         writer.close();
     }
+
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //使用PrintWriter.write()方法gaifang向前台页面输出内容
         PrintWriter writer = resp.getWriter();
@@ -26,10 +27,12 @@ public class MyServlet extends HttpServlet {
         writer.close();
         doGet(req, resp);
     }
-    public void init(ServletConfig config){
+
+    public void init(ServletConfig config) {
         System.out.println("MyServlet-init");
     }
-    public void destroy(){
+
+    public void destroy() {
         System.out.println("MyServlet-destroy");
     }
 }
