@@ -1,19 +1,17 @@
 package controller;
 
 import entity.Student;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import service.UserService;
 
-import javax.annotation.Resource;
-
 
 @Controller
 @RequestMapping(value = "/user")
 public class UserController {
-    @Resource
-//    @Autowired
+    @Autowired
     private UserService userService;
 
     public void doStr() {
