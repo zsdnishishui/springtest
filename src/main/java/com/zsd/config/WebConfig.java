@@ -2,8 +2,10 @@ package com.zsd.config;
 
 import com.zsd.interceptor.MyInterceptor;
 import com.zsd.interceptor.MyInterceptor2;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
@@ -25,13 +27,13 @@ public class WebConfig implements WebMvcConfigurer {
     }
 
     //配置文件上传解析器
-//    @Bean
-//    public CommonsMultipartResolver multipartResolver() {
-//        CommonsMultipartResolver commonsMultipartResolver = new CommonsMultipartResolver();
-//        commonsMultipartResolver.setDefaultEncoding("UTF-8");
-//        commonsMultipartResolver.setMaxUploadSize(1024 * 1024 * 10);
-//        return commonsMultipartResolver;
-//    }
+    @Bean
+    public CommonsMultipartResolver multipartResolver() {
+        CommonsMultipartResolver commonsMultipartResolver = new CommonsMultipartResolver();
+        commonsMultipartResolver.setDefaultEncoding("UTF-8");
+        commonsMultipartResolver.setMaxUploadSize(1024 * 1024 * 10);
+        return commonsMultipartResolver;
+    }
 
     //配置拦截器
     @Override
