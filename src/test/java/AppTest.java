@@ -1,4 +1,4 @@
-import config.SpringConfig;
+import com.zsd.config.SpringConfig;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

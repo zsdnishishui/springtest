@@ -17,7 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
-        <!--    我用的是tomcat7,所以这里不用5.3.0以上的版本-->
+        <!--    我用的是tomcat9    -->
         <spring-version>5.3.0</spring-version>
     </properties>
 
@@ -90,14 +90,14 @@
             <version>3.5.6</version>
         </dependency>
 
-<!--        pagehelper  mybatis分页（只需配置一次，重复配置会报错！）-->
+        <!--        pagehelper  mybatis分页（只需配置一次，重复配置会报错！）-->
 
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
             <version>5.1.11</version>
         </dependency>
-<!--        mybatis-spring 整合库 （注：是以mybatis开头）-->
+        <!--        mybatis-spring 整合库 （注：是以mybatis开头）-->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
