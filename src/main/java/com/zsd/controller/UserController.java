@@ -40,4 +40,12 @@ public class UserController {
         System.out.println(student.getName());
         return "register";
     }
+
+    @RequestMapping("/add")
+    @ResponseBody
+    public String add() {
+        int i = userService.addStudent();
+        System.out.println(i);
+        return "login";
+    }
 }

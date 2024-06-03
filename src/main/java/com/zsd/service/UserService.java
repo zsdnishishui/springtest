@@ -10,4 +10,11 @@ public interface UserService {
     public Student getUserByMapper(Integer id);
 
     public Student getUserByNoXml(Integer id);
+
+    /**
+     * 主要是为了测试事务传递
+     *
+     * @return
+     */
+    int addStudent();
 }
